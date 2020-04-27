@@ -1,0 +1,30 @@
+body.login {
+  background: linear-gradient(to bottom, #E72067 0%, #E39FC6 100%);
+}
+
+body.login div#login h1 {
+  width: 100%;
+}
+
+body.login div#login h1 a {
+  background: url(../images/login/logotipo.svg) no-repeat center center/auto 100% transparent;
+  height: 85px;
+  margin: 0 auto 50px;
+  outline: none;
+  width: 100%;
+}
+
+body.login div#login #loginform #user_pass,
+body.login div#login #loginform #user_login {
+  color: #E72067;
+}
+
+body.login div#login #nav a,
+body.login div#login #backtoblog a {
+  color: #fff;
+}
+
+body.login div#login #nav a:hover,
+body.login div#login #backtoblog a:hover {
+  color: #E72067;
+}

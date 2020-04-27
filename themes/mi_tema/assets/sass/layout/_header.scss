@@ -1,0 +1,126 @@
+
+ // Extra small devices (portrait phones, less than 576px)
+ @media (max-width: 575.98px) { 
+    .header__logo {
+        width: 80%;
+        margin: 2rem 0;
+        padding-top: 8rem;
+        margin-bottom: 0px;
+    }
+    .header__image {
+        min-height: 100vh;
+        background-image: url('../img/background-01.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+    }
+    .header__title{
+        font-size: $x-large;
+        color: $bg-blanco;
+    }
+    .medalla{
+        width: 65px;
+        height: 65px;
+    }
+ }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .header__image {
+        min-height: 100vh;
+        background-image: url('../img/background-01.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+    }
+    .header__logo {
+        width: 65%;
+        margin: 2rem 0;
+        padding-top: 8rem;
+        margin-bottom: 0px;
+    }
+    .header__title{
+        font-size: $x-large;
+        color: $bg-blanco;
+    }
+    .medalla{
+        width: 65px;
+        height: 65px;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .header__image {
+        min-height: 100vh;
+        background-image: url('../img/background-01.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+    }
+    .header__logo {
+        width: 25%;
+        margin: 2rem 0;
+        padding-top: 8rem;
+        margin-bottom: 0px;
+    }
+    .header__title{
+        font-size: $xx-large;
+        color: $bg-blanco;
+    }
+    .medalla{
+        width: 65px;
+        height: 65px;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .header__image {
+        min-height: 100vh;
+        background-image: url('../img/background-01.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+    }
+    .header__logo {
+        width: 25%;
+        margin: 2rem 0;
+        padding-top: 8rem;
+        margin-bottom: 0px;
+    }
+    .header__title{
+        font-size: $xx-large;
+        color: $bg-blanco;
+    }
+    .medalla{
+        width: 85px;
+        height: 85px;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .header__image {
+        min-height: 100vh;
+        background-image: url('../images/background-01.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+    }
+    
+    .header__logo {
+        width: 25%;
+        margin: 2rem 0;
+        padding-top: 8rem;
+        margin-bottom: 0px;
+    }
+    .header__title{
+        font-size: $xxx-large;
+        color: $bg-blanco;
+    }
+    .medalla{
+        width: 90px;
+        height: 90px;
+    }
+ }

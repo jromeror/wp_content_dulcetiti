@@ -1,0 +1,24 @@
+/* PLACEHOLDER & EXTEND */
+%boton {
+    font-family: $font-pt-sans;
+    border: none;
+    text-decoration: none;
+    color: $bg-blanco;
+    padding: .5rem 1.5rem;
+    border-radius: .2rem;
+    transition: background .5s; 
+    &:hover {
+        background-color: $bg-fucsia;
+    }
+
+    &:focus {
+        background-color: $bg-fondo;
+    }
+}
+
+.btn-rosa {
+    @extend %boton;
+    background: $bg-rosa;
+}
+
+
