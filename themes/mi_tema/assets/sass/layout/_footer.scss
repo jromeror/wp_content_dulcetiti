@@ -1,8 +1,36 @@
-.footer__icono-face {
-    color: blue;
+.galeria {
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
-.footer_icono-insta {
-    color: orangered;
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 138, 195, .50);
+}
+
+.galeria:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 a{
@@ -24,7 +52,7 @@ small {
 }
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     footer {
         margin-bottom: 0px;
         padding-bottom: 0px;

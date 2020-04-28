@@ -10021,7 +10021,7 @@ h3 {
 
   .header__image {
     min-height: 100vh;
-    background-image: url("../images/background-01.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -10040,7 +10040,7 @@ h3 {
 @media (min-width: 576px) and (max-width: 767.98px) {
   .header__image {
     min-height: 100vh;
-    background-image: url("../images/background-01.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -10066,7 +10066,7 @@ h3 {
 @media (min-width: 768px) and (max-width: 991.98px) {
   .header__image {
     min-height: 100vh;
-    background-image: url("../images/background-01.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -10092,7 +10092,7 @@ h3 {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .header__image {
     min-height: 100vh;
-    background-image: url("../images/background-01.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -10118,7 +10118,7 @@ h3 {
 @media (min-width: 1200px) {
   .header__image {
     min-height: 100vh;
-    background-image: url("../images/background-01.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -10141,12 +10141,39 @@ h3 {
     height: 90px;
   }
 }
-.footer__icono-face {
-  color: blue;
+.galeria {
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
-.footer_icono-insta {
-  color: orangered;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(255, 138, 195, 0.5);
+}
+
+.galeria:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 a i {
