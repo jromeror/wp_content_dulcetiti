@@ -26,6 +26,8 @@
           <?php $arg = array(
             'post_type'     => 'galeria',
             'posts_per_page' => 4,
+            'paged' => $paged,
+            'order' => 'DESC', 
             );
 
             $get_arg = new WP_Query( $arg );
@@ -43,7 +45,7 @@
             <?php } wp_reset_postdata(); ?>
             </div>
           <div class="mb-5 mt-5">
-            <button class="btn-rosa"><a href="galeria" class="boton_a">Ver Todos los trabajos</a></button>
+            <button class="btn-rosa"><a href="galerias" class="boton_a">Ver Todos los trabajos</a></button>
           </div>
         </div>
       </section>

@@ -4,12 +4,15 @@
       <!-- BEGIN GALERIA -->
 
       <section id="galeria__nav" class="py-5">
-        <div class="container text-center">
+        <div class="container">
           <h3 class="title__principal mb-5">Galería de trabajos realizados</h3>
           <div class="row">
           <?php $arg = array(
             'post_type'     => 'galeria',
-            'posts_per_page' => 4,
+            'posts_per_page' => 8,
+            'paged' => $paged,
+            'order' => 'DESC',  
+
             );
 
             $get_arg = new WP_Query( $arg );
@@ -26,8 +29,10 @@
             </figure>
             <?php } wp_reset_postdata(); ?>
             </div>
+            
           <div class="mb-5 mt-5">
-            <button class="btn-rosa"><a href="galeria" class="boton_a">Ver Todos los trabajos</a></button>
+             <?php the_pagination( $get_arg ); ?>
+             <button class="btn-rosa"><a href="galeria" class="boton_a">Ver Todos los trabajos</a></button>
           </div>
         </div>
       </section>
