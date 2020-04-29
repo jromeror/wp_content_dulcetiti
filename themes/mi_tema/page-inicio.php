@@ -85,22 +85,16 @@
 
       <!-- BEGIN NEWSLATTER-->
 
-    <div id="contacto__nav" class="container">
-      <h3 class="title__principal pb-5 mt-5 text-center"> Suscríbete a mi newsletter</h3>
-      <form>
-        <div class="form-group">
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Dirección de email">
-        </div>
-        <a href="" class="boton btn-newsletter">Suscríbete ahora</a>
-      </form>
-      <div class="mb-5 mt-5 text-center">
-        <button class="btn-rosa"><a href="page-contacto.html" class="boton_a">Ir a Contacto</a></button>
-      </div>
+    <div id="contacto__nav" class="container mb-5">
+      <h3 class="title__principal pb-5 mt-5 text-center">Suscríbete a mi newsletter</h3>
+      <div>
+        <?php if ( is_active_sidebar( 'content-widget' ) ) { ?>
+            <?php dynamic_sidebar( 'content-widget' ); ?>
+        <?php }; ?>
+    </div>
     </div>
       <!-- END NEWSLATTER-->
 
-<div>
-<?php the_content(); ?>
-</div>
+
 
 <?php get_footer() ?>
