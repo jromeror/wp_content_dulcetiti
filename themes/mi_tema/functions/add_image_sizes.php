@@ -35,7 +35,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 	add_image_size( 'servicios', 523, 380, true );		// Personalización del tamaño del servicios
 	add_image_size( 'galeria', 360, 240, true );		// Personalizado de la galeria
 	add_image_size( 'entradas', 360, 360, true );		// Personalizado de las entradas
-	add_image_size( 'detail', 720, 360, true );			// Personalizado de los post individuales
+	add_image_size( 'detail', 900, 260, true );			// Personalizado de los post individuales
 
 
 	add_filter( 'image_size_names_choose', 'dl_image_sizes' );

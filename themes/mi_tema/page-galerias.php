@@ -30,7 +30,7 @@
             
           <div class="mb-5 mt-5">
              <?php the_pagination( $get_arg ); ?>
-             <button class="btn-rosa"><a href="" class="boton_a">Volver a inicio</a></button>
+             <button class="btn-rosa"><a href="<?php echo get_home_url()?>" class="boton_a">Volver a inicio</a></button>
           </div>
         </div>
       </section>

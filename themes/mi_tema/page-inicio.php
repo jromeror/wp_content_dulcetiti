@@ -99,5 +99,8 @@
     </div>
       <!-- END NEWSLATTER-->
 
+<div>
+<?php the_content(); ?>
+</div>
 
 <?php get_footer() ?>
