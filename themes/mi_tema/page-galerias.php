@@ -1,10 +1,8 @@
 <?php get_header() ?>
-
-
       <!-- BEGIN GALERIA -->
 
       <section id="galeria__nav" class="py-5">
-        <div class="container">
+        <div class="container py-5">
           <h3 class="title__principal mb-5">Galería de trabajos realizados</h3>
           <div class="row">
           <?php $arg = array(
@@ -32,7 +30,7 @@
             
           <div class="mb-5 mt-5">
              <?php the_pagination( $get_arg ); ?>
-             <button class="btn-rosa"><a href="galeria" class="boton_a">Ver Todos los trabajos</a></button>
+             <button class="btn-rosa"><a href="" class="boton_a">Volver a inicio</a></button>
           </div>
         </div>
       </section>

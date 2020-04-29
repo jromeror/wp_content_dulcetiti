@@ -10,7 +10,7 @@
 function dl_image_sizes( $sizes ) {
 
 	$add_sizes = array(
-		'square'		=> __( 'Tamaño del square' ),
+		'servicios'		=> __( 'Tamaño de los servicios' ),
 		'galeria'	=> __( 'Tamaño personalizado de la galeria' ),
 		'entradas'	=> __( 'Tamaño personalizado de las entradas' ),
 		'detail'	=> __( 'Tamaño personalizado de los post individuales' )
@@ -32,7 +32,7 @@ function dl_image_sizes( $sizes ) {
  */
 if ( function_exists( 'add_theme_support' ) ) {
 
-	add_image_size( 'square', 400, 400, true );			// Personalización del tamaño del square
+	add_image_size( 'servicios', 523, 380, true );		// Personalización del tamaño del servicios
 	add_image_size( 'galeria', 360, 240, true );		// Personalizado de la galeria
 	add_image_size( 'entradas', 360, 360, true );		// Personalizado de las entradas
 	add_image_size( 'detail', 720, 360, true );			// Personalizado de los post individuales

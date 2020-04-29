@@ -54,91 +54,34 @@
 
       <!-- BEGIN SERVICES -->
 
-      <div id="servicios__nav" class="container text-center">
+      <div id="servicios__nav" class="container">
         <h3 class="title__principal mb-5">Servicios</h3>
-        <div class="row">
-        <div class="card-deck mb-5">
-          <article class="card col-12 col-md-6">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/service-01.jpg" class="card-img-top servicios__cursor" alt="Alfajores Personalizados" data-toggle="modal" data-target="#alfajores__personalizados">
+        <div class="row text-center">
+        <?php $arg = array(
+          'post_type' => 'post',
+          'posts_per_page' => 2,
+          'order' => 'ASC', 
+          );
+
+          $get_arg = new WP_Query( $arg );
+          while ( $get_arg->have_posts() ) {
+          $get_arg->the_post();
+          ?>
+          <div class="card-deck mb-5 col-12 col-md-6">
+          <article class="card">
+          <?php the_post_thumbnail('servicios', array('class' => 'w-100 h-auto')); ?> 
             <div class="card-body">
-              <h5 class="card-title card__texto">Alfajores personalizados</h5>
-              <p class="card-text  mt-3 text-left card__texto-subtext">Solicita alfajores personalizados bañados en chocolate, chocolate blanco, colores y relleno de manjar o frambuesa.</p>
+              <h5 class="card-title card__texto"><?php the_title(); ?></h5>
+              <p class="card-text  mt-3 text-left card__texto-subtext"><?php the_excerpt(); ?></p>
+              <p><a href="<?php the_permalink(); ?>" class="btn-rosa">Ver Más</a></p>
             </div>
           </article>
-          <article class="card col-12 col-md-6">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/service-02.jpg" class="card-img-top servicios__cursor" alt="Coctelería Dulce" data-toggle="modal" data-target="#cocteleria__dulce">
-            <div class="card-body">
-              <h5 class="card-title card__texto">Coctelería dulce</h5>
-              <p class="card-text mt-3 text-left card__texto-subtext">Nuestro cóctel dulce son 100% caseros, deliciosos y de excelente calidad, para que disfrutes de tu fiesta y al mejor precio.</p>
-            </div>
-          </article>
+          </div>
+          <?php } wp_reset_postdata(); ?>
         </div>
       </div>
-      <div class="mb-5 mt-5">
-          <button class="btn-rosa"><a href="page-galeria.html" class="boton_a">Ver Todos los Productos</a></button>
-      </div>
-
-    </div>
 
       <!-- END SERVICES -->
-
-      <!-- BEGIN MODAL BOOTSTRAP 4.4.1 -->
-
-      <div id="alfajores__personalizados" class="modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title card__texto">Alfajores Personalizados</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <ul class="card__texto-subtext">
-                <li>Alfajores personalizados tamaño normal hasta formato de 24 unidades.</li>
-                <li>En unidades personalizadas para fiestas corporativas, cumpleaños, bautizos, etc.</li>
-                <li>Alfajores personalizados tamaño mini para todo tipo de ocasión desde 50 unidades mínimo.</li>
-              </ul>
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-modal" data-dismiss="modal"><a href="#" class="btn-rosa">Cerrar</a></button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="cocteleria__dulce" class="modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title card__texto">Coctelería Dulce</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>
-              <ul class="card__texto-subtext">
-                <li>Mini alfajotres personalizados.</li>
-                <li>Mini cupcakes y tamaño normal.</li>
-                <li>Mini pie de limón y tamaño normal.</li>
-                <li>Tartaletas de frutas.</li>
-                <li>Barras de cereal.</li>
-                <li>Cachitos rellenos.</li>
-                <li>Marshmallow temáticos.</li>
-              </ul>
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-modal" data-dismiss="modal"><a href="#" class="btn-rosa">Cerrar</a></button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-     <!-- END MODAL BOOTSTRAP 4.4.1 -->
 
       <!-- BEGIN NEWSLATTER-->
 
