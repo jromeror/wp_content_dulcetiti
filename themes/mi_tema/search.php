@@ -23,3 +23,4 @@
 	<?php get_sidebar() ?>
 <?php get_footer() ?>
 <!-- Mismo contrnido de archive.php -->
+<h2>Buscando: <?php echo esc_html( get_search_query( false ) ); ?></h2>

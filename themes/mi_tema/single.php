@@ -3,16 +3,17 @@
 <?php if ( have_posts() ) { ?>
 	<?php while ( have_posts() ) { ?>
 		<?php the_post(); ?>
-		<article class="mb-5 container">
-		<h2><?php the_title(); ?></h2>
+		<article class="my-5 container">
+		<h2 class="py-5"><?php the_title(); ?></h2>
+		<p><?php the_tags( '<span class="text-warning">#</span>', ' <span class="text-warning">#</span>', '' ); ?></p>
 		<div>
-		<?php the_post_thumbnail('entradas', array('class' => 'w-100 h-auto ')); ?> 
+		<?php the_post_thumbnail('detail', array('class' => 'w-100 h-auto ')); ?> 
 		</div>
 		</article>
 		<div>
 			<?php the_content() ?>
 		</div>
-		<p><a href="<?php echo get_home_url()?>" class="btn-rosa">Volver a inicio</a></p>
+		<p class="my-5"><a href="<?php echo get_home_url()?>" class="btn-rosa">Volver a inicio</a></p>
 
 	<?php } ?>
 <?php } else { ?>
