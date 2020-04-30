@@ -58,7 +58,7 @@
         <h3 class="title__principal mb-5">Servicios</h3>
         <div class="row text-center">
         <?php $arg = array(
-          'post_type' => 'post',
+          'post_type' => 'shop',
           'posts_per_page' => 2,
           'order' => 'ASC', 
           );

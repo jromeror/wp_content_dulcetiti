@@ -52,7 +52,7 @@ function dl_enqueue_style() {
 
 	wp_enqueue_style( 'main_style' );
 	wp_enqueue_style( 'my_style' );
-	wp_enqueue_style( 'style' );
+	wp_enqueue_style( 'google-fonts' );
 
 }
 
