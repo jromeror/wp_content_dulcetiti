@@ -54,11 +54,11 @@
 
       <!-- BEGIN SERVICES -->
 
-      <div id="servicios__nav" class="container">
+      <section id="servicios__nav" class="container">
         <h3 class="title__principal mb-5">Servicios</h3>
         <div class="row text-center">
         <?php $arg = array(
-          'post_type' => 'shop',
+          'post_type' => 'post',
           'posts_per_page' => 2,
           'order' => 'ASC', 
           );
@@ -79,7 +79,7 @@
           </div>
           <?php } wp_reset_postdata(); ?>
         </div>
-      </div>
+      </section>
 
       <!-- END SERVICES -->
 

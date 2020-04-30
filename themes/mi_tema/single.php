@@ -10,7 +10,7 @@
 		<?php the_post_thumbnail('detail', array('class' => 'w-100 h-auto ')); ?> 
 		</div>
 		</article>
-		<div>
+		<div class="container text-left">
 			<?php the_content() ?>
 		</div>
 		<p class="my-5"><a href="<?php echo get_home_url()?>" class="btn-rosa">Volver a inicio</a></p>
