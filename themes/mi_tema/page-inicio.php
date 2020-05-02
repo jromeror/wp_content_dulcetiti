@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <?php the_post() ?>
-
+<?php $title = 'Los mejores alfajores personalizados'; ?>
   <!-- BEGIN HEADER -->
 
   <header class="header__image">
@@ -10,7 +10,7 @@
           </object>
             <div class="col-12">
             <h1><?php get_template_part('_includes/medalla', 'main') ?></h1> <!-- SVG MEDALLA -->
-                <p class="header__title">Los mejores alfajores artesanales</p>
+                <p class="header__title"><?php echo $title ?></p>
             </div>
         </div>
       </header>
@@ -58,7 +58,7 @@
         <h3 class="title__principal mb-5">Servicios</h3>
         <div class="row text-center">
         <?php $arg = array(
-          'post_type' => 'post',
+          'post_type' => 'shop',
           'posts_per_page' => 2,
           'order' => 'ASC', 
           );
@@ -71,9 +71,8 @@
           <article class="card">
           <?php the_post_thumbnail('servicios', array('class' => 'w-100 h-auto')); ?> 
             <div class="card-body">
-              <h5 class="card-title card__texto"><?php the_title(); ?></h5>
-              <p class="card-text  mt-3 text-left card__texto-subtext"><?php the_excerpt(); ?></p>
-              <p><a href="<?php the_permalink(); ?>" class="btn-rosa">Ver Más</a></p>
+              <h5 class="card-title card__texto text-rosa"><?php the_title(); ?></h5>
+              <p class="card-text  mt-3 card__texto-subtext"><?php the_content(); ?></p>
             </div>
           </article>
           </div>

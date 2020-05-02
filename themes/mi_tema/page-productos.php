@@ -4,9 +4,9 @@
 
 <section class="container my-5">
 		<h3 class="title__principal text-center py-5">Productos</h3>
-       	 <div class="row text-center">
+      <div class="row text-center">
         <?php $arg = array(
-          'post_type' => 'shop',
+          'post_type' => 'post',
           'posts_per_page' => -1,
           'order' => 'ASC', 
           );
@@ -19,9 +19,10 @@
           <article class="card">
           <?php the_post_thumbnail('galeria', array('class'=> 'w-100 h-auto')); ?>
             <div class="card-body">
-			<p><?php the_title(); ?></p>
-			<p><?php the_excerpt(); ?></p>
-			<h5>Precio: $ <?php the_field('precio'); ?></h5>
+              <p><?php the_title(); ?></p>
+              <p><?php the_excerpt(); ?></p>
+              <h5>Precio: $ <?php the_field('precio'); ?></h5>
+              <div class="pt-2"><a class="btn-rosa" href="<?php the_permalink(); ?>">Ver</a></div>
             </div>
 		  </article>
           </div>

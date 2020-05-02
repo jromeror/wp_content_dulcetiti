@@ -1,4 +1,5 @@
 <?php get_header() ?>
+
       <!-- BEGIN GALERIA -->
 
       <section id="galeria__nav" class="py-5">
@@ -10,7 +11,6 @@
             'posts_per_page' => 8,
             'paged' => $paged,
             'order' => 'DESC',  
-
             );
 
             $get_arg = new WP_Query( $arg );

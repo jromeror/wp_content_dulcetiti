@@ -9920,10 +9920,6 @@ body {
   background-image: url("../images/background-02.png");
 }
 
-footer {
-  background-color: #E39FC6;
-}
-
 body {
   margin: 0;
 }
@@ -9938,11 +9934,11 @@ h3 {
 }
 
 .title__principal {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .subtitle__principal {
-  font-size: 28px;
+  font-size: 22px;
 }
 
 .subtitle__principal-texto {
@@ -9961,6 +9957,10 @@ h3 {
 
 .servicios__cursor {
   cursor: pointer;
+}
+
+.text-rosa {
+  color: #E39FC6;
 }
 
 .medalla {
@@ -10028,7 +10028,7 @@ h3 {
   }
 
   .header__title {
-    font-size: 25px;
+    font-size: 20px;
     color: #FFF;
   }
 
@@ -10054,7 +10054,7 @@ h3 {
   }
 
   .header__title {
-    font-size: 25px;
+    font-size: 20px;
     color: #FFF;
   }
 
@@ -10080,7 +10080,7 @@ h3 {
   }
 
   .header__title {
-    font-size: 28px;
+    font-size: 20px;
     color: #FFF;
   }
 
@@ -10106,7 +10106,7 @@ h3 {
   }
 
   .header__title {
-    font-size: 28px;
+    font-size: 20px;
     color: #FFF;
   }
 
@@ -10132,7 +10132,7 @@ h3 {
   }
 
   .header__title {
-    font-size: 32px;
+    font-size: 20px;
     color: #FFF;
   }
 
@@ -10184,14 +10184,14 @@ footer {
   padding: 10px;
   margin-bottom: 0px;
   padding-bottom: 0px;
-}
-
-small {
-  font-size: 18px;
+  font-family: 14px;
+  background-color: #E39FC6;
 }
 
 .footer__text {
   margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-family: 14px;
 }
 
 @media (max-width: 575.98px) {
@@ -10203,6 +10203,7 @@ small {
   .footer__text {
     margin-bottom: 0px;
     padding-bottom: 0px;
+    font-family: 14px;
   }
 }
 .boton_a {
