@@ -1,7 +1,7 @@
 <?php get_header() ?>
 
 <section class="container py-5">
-<h2 class="text-center pt-5">Categoría: <?php single_term_title(); ?></h2>
+<h2 class="text-center pt-5">Tags: <?php single_term_title(); ?></h2>
 <div class="complet pt-5">
 	<?php if (have_posts()) { ?>
 		<?php while ( have_posts() ) { the_post(); ?>
@@ -18,7 +18,8 @@
 				</article>
 			</div>
 		</div>
-	<?php }; ?>
+
+		<?php }; ?>
 
 
 	<?php } else { ?>

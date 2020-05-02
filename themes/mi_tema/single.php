@@ -15,6 +15,7 @@
 								<h3 class="pt-5"><?php the_content(); ?></h3>
 								<h5>Precio: $ <?php the_field('precio'); ?></h5>
 								<h5 class="pt-5">Categoría: <?php the_category(' '); ?></h5>
+								<p><?php the_tags( '<span class="text-rosa">#</span>', ' <span class="text-rosa">#</span>', '' ); ?></p>
 							</div>
 						</div>
 					</div>
